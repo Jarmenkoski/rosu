@@ -179,7 +179,7 @@ export const TIMELINE = [
     description: "RoSu Oy registered in Finland with a clear mission: build software that makes everyday life easier and better.",
   },
   {
-    date: "Q1 2025",
+    date: "Q1 2026",
     title: "First Funding Application",
     description: "Submitted our first funding application to accelerate product development and bring our vision to a wider audience.",
   },
