@@ -28,10 +28,9 @@ export default function MissionSection() {
                 Mission
               </h3>
               <p className="text-body-lg text-white/50">
-                To engineer digital solutions that make a real difference —
-                building software products and platforms that help businesses
-                grow, connect people to services they need, and push the
-                boundaries of what technology can achieve.
+                To build software that genuinely makes everyday life easier
+                and better. We focus on real problems that real people face —
+                and we don&apos;t stop until the solution feels effortless.
               </p>
             </Card>
           </motion.div>
@@ -48,10 +47,9 @@ export default function MissionSection() {
                 Vision
               </h3>
               <p className="text-body-lg text-white/50">
-                To become a recognized Finnish software company known for
-                delivering innovative, high-quality digital products. Starting
-                with Ask4Help, we aim to build a portfolio of platforms that
-                transform industries — from Finland to the world.
+                A world where everyday tasks and services are simpler, more
+                accessible, and more enjoyable — powered by thoughtful
+                technology built right here in Finland.
               </p>
             </Card>
           </motion.div>

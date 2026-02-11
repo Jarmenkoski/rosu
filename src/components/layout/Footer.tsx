@@ -20,8 +20,8 @@ export default function Footer() {
               />
             </Link>
             <p className="mt-3 text-sm text-white/40">
-              Engineering digital solutions from Finland. Software development,
-              technical consulting, and product design.
+              Building software that makes everyday life easier and better.
+              From Finland, for everyone.
             </p>
           </div>
 

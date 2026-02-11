@@ -42,7 +42,7 @@ export default function ServicesSection() {
         <SectionHeading
           badge="Services"
           title="What we do"
-          description="End-to-end software development services tailored to your business needs."
+          description="We build software that removes friction from everyday life — and help others do the same."
         />
 
         <motion.div

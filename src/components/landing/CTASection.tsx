@@ -23,14 +23,15 @@ export default function CTASection() {
             variants={fadeInUp}
             className="gradient-text-white text-heading-1 font-bold md:text-display-sm"
           >
-            Let&apos;s build your next project
+            Have an idea that could make life easier?
           </motion.h2>
           <motion.p
             variants={fadeInUp}
             className="mt-4 text-body-lg text-white/50"
           >
-            Whether you need a new platform, technical consulting, or want to
-            discuss a collaboration, we&apos;d love to hear from you.
+            We&apos;re always looking for the next everyday problem worth
+            solving. If you have an idea, a project, or just want to talk —
+            we&apos;d love to hear from you.
           </motion.p>
           <motion.div
             variants={fadeInUp}

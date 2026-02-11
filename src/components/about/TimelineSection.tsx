@@ -13,7 +13,7 @@ export default function TimelineSection() {
         <SectionHeading
           badge="Timeline"
           title="Our journey"
-          description="Key milestones from founding to today."
+          description="From an idea to a real product — here's how we got here."
         />
 
         <motion.div

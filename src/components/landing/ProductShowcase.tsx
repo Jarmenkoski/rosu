@@ -25,7 +25,7 @@ export default function ProductShowcase() {
         <SectionHeading
           badge="Our Flagship Product"
           title="Meet Ask4Help"
-          description="A marketplace that brings homeowners and contractors together with a seamless, modern experience."
+          description="Finding reliable help for home projects shouldn't be stressful. Ask4Help makes it simple, transparent, and fair for everyone."
         />
 
         <div className="grid gap-8 lg:grid-cols-2">

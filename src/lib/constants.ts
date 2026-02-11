@@ -9,16 +9,16 @@ export const COMPANY = {
   website: "https://rosu.fi",
 } as const;
 
-export const COMPANY_TAGLINE = "Engineering Digital Solutions from Finland" as const;
+export const COMPANY_TAGLINE = "Software That Makes Everyday Life Easier" as const;
 
 export const COMPANY_DESCRIPTION =
-  "RoSu Oy is a Finnish software development company building modern digital products. We combine deep technical expertise with practical Nordic design thinking to deliver platforms that solve real problems." as const;
+  "RoSu Oy is a Finnish software company on a mission to build digital products that genuinely improve people's daily lives. We believe technology should simplify, not complicate — and every product we create starts from that conviction." as const;
 
 export const PRODUCT = {
   name: "Ask4Help",
   tagline: "Connecting homeowners with trusted professionals",
   description:
-    "A mobile-first contractor marketplace platform where homeowners post jobs, contractors bid, and work gets done — all through one seamless experience.",
+    "A mobile-first contractor marketplace where homeowners post jobs, contractors bid, and work gets done — making home improvement simple, transparent, and stress-free.",
 } as const;
 
 export const NAV_LINKS = [
@@ -31,25 +31,25 @@ export const SERVICES = [
   {
     title: "Platform Development",
     description:
-      "Full-stack web and mobile platforms built with modern frameworks. From marketplace apps to SaaS products, we architect and deliver scalable solutions.",
+      "We build web and mobile platforms that people actually enjoy using. From concept to launch, we focus on creating seamless experiences that make complex tasks feel simple.",
     icon: "code",
   },
   {
     title: "Technical Consulting",
     description:
-      "Architecture reviews, technology selection, and strategic guidance to help your team make the right technical decisions from day one.",
+      "Not sure where to start? We help you choose the right technology, plan your architecture, and make smart decisions that save time and money down the road.",
     icon: "lightbulb",
   },
   {
     title: "Product Design",
     description:
-      "User-centered design and prototyping that turns complex requirements into intuitive, beautiful interfaces people love to use.",
+      "Great software starts with understanding people. We design intuitive interfaces through user research, prototyping, and iteration until it just feels right.",
     icon: "palette",
   },
   {
     title: "Cloud & DevOps",
     description:
-      "Infrastructure setup, CI/CD pipelines, and cloud deployment strategies that keep your applications running smoothly at scale.",
+      "We set up the infrastructure so your product runs smoothly and scales when it needs to. Reliable deployments, monitoring, and peace of mind included.",
     icon: "cloud",
   },
 ] as const;
@@ -58,12 +58,12 @@ export const FOUNDERS = [
   {
     name: "Julius Rovio",
     role: "CEO",
-    bio: "Leads the company's vision and product strategy. Passionate about building technology that solves real-world problems and creating seamless digital experiences.",
+    bio: "Driven by a belief that technology should make life easier for everyone. Leads product vision and hands-on development at RoSu Oy.",
   },
   {
     name: "Jaakko Suomalainen",
     role: "Chairman",
-    bio: "Oversees company governance and strategic direction. Brings business expertise and a focus on sustainable growth to guide RoSu Oy's long-term trajectory.",
+    bio: "Brings strategic thinking and business expertise to guide the company's growth. Focused on building something that truly matters.",
   },
 ] as const;
 
@@ -89,7 +89,7 @@ export const FEATURES = [
   {
     title: "Live Messaging",
     description:
-      "Real-time chat powered by Socket.io keeps homeowners and contractors connected throughout the project.",
+      "Real-time chat keeps homeowners and contractors connected throughout the project.",
     icon: "message-circle",
   },
   {
@@ -151,24 +151,24 @@ export const TECH_STACK = [
 
 export const VALUES = [
   {
+    title: "Simplicity",
+    description:
+      "The best technology is the kind you don't have to think about. We obsess over removing friction so our products feel effortless to use.",
+  },
+  {
+    title: "Real Impact",
+    description:
+      "We don't build for the sake of building. Every product we create must genuinely improve someone's everyday life — or it's not worth shipping.",
+  },
+  {
     title: "Transparency",
     description:
-      "Open communication and honest pricing in everything we do. We believe trust is built through clarity — with our clients, our partners, and our team.",
+      "Honest communication, clear expectations, no hidden surprises. We build trust by being straightforward with our clients, partners, and users.",
   },
   {
-    title: "Quality",
+    title: "Continuous Improvement",
     description:
-      "We hold ourselves to high engineering standards. Clean code, thorough testing, and thoughtful architecture are non-negotiable in every project we deliver.",
-  },
-  {
-    title: "Innovation",
-    description:
-      "We stay at the forefront of technology, continuously exploring modern tools and approaches to deliver solutions that are built for the future.",
-  },
-  {
-    title: "User-First",
-    description:
-      "Every feature we build starts with the end user. We design and develop with empathy, ensuring our products solve real problems in intuitive ways.",
+      "Good enough isn't good enough. We listen, learn, and iterate — because the best version of our product is always the next one.",
   },
 ] as const;
 
@@ -176,31 +176,26 @@ export const TIMELINE = [
   {
     date: "Q1 2024",
     title: "Company Founded",
-    description: "RoSu Oy registered in Finland with a vision to build impactful digital products.",
-  },
-  {
-    date: "Q2 2024",
-    title: "Ask4Help Development Begins",
-    description: "First product kicks off. Core platform architecture designed with Next.js, Express, and PostgreSQL.",
-  },
-  {
-    date: "Q3 2024",
-    title: "Core Platform Built",
-    description: "Job posting, bidding system, real-time messaging, and order tracking implemented.",
-  },
-  {
-    date: "Q4 2024",
-    title: "Beta Testing & Iteration",
-    description: "Internal testing and refinement. Payment system and review features added to Ask4Help.",
+    description: "RoSu Oy registered in Finland with a clear mission: build software that makes everyday life easier and better.",
   },
   {
     date: "Q1 2025",
-    title: "Platform Refinement",
-    description: "UI/UX improvements based on beta feedback. Performance optimization across the stack.",
+    title: "First Funding Application",
+    description: "Submitted our first funding application to accelerate product development and bring our vision to a wider audience.",
   },
   {
-    date: "2025",
-    title: "Growing the Company",
-    description: "Expanding our service offering and preparing Ask4Help for public launch. Corporate site live at rosu.fi.",
+    date: "Q2 2025",
+    title: "Ask4Help Concept Demo",
+    description: "Designed and built the first interactive prototype of Ask4Help in Figma, validating the core user experience.",
+  },
+  {
+    date: "Q4 2025",
+    title: "Demo Platform Built",
+    description: "Developed a working demo of the Ask4Help platform, bringing the concept to life with real functionality.",
+  },
+  {
+    date: "Q2 2026",
+    title: "Production Platform",
+    description: "Building the proper production version of Ask4Help — ready to serve real homeowners and contractors.",
   },
 ] as const;

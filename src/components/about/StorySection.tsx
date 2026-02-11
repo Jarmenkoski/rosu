@@ -8,7 +8,7 @@ import { fadeInUp, staggerContainer } from "@/lib/animations";
 const stats = [
   { label: "Founded", value: "2024" },
   { label: "Headquarters", value: "Finland" },
-  { label: "Focus", value: "Software" },
+  { label: "Mission", value: "Simplify Life" },
   { label: "Flagship", value: "Ask4Help" },
 ];
 
@@ -36,29 +36,31 @@ export default function StorySection() {
             variants={fadeInUp}
             className="gradient-text-white text-4xl font-bold sm:text-5xl md:text-display-sm"
           >
-            Built in Finland,
+            Making everyday life
             <br />
-            engineered for impact
+            a little bit better
           </motion.h1>
 
           <motion.div variants={fadeInUp} className="mt-8 space-y-4 text-body-lg text-white/50">
             <p>
-              RoSu Oy was founded in 2024 by two Finnish entrepreneurs who
-              saw an opportunity to build software that makes a real difference.
-              With backgrounds spanning technology and business, we set out
-              to create a company that delivers high-quality digital solutions.
+              RoSu Oy started from a simple belief: technology should make
+              people&apos;s lives easier, not harder. Founded in 2024 by two
+              Finnish entrepreneurs, we saw countless everyday problems that
+              could be solved with thoughtful software — and decided to do
+              something about it.
             </p>
             <p>
-              Our first product, Ask4Help, is a modern marketplace where
-              homeowners can post projects, receive competitive bids from
-              verified contractors, and manage everything from communication to
-              payment in one place. It embodies our approach: solve real problems
-              with elegant technology.
+              Our first product, Ask4Help, tackles one of those everyday
+              frustrations: finding reliable help for home projects. Instead of
+              word-of-mouth guesswork, homeowners get a simple platform to post
+              what they need, compare offers from verified contractors, and get
+              the job done with confidence.
             </p>
             <p>
-              As a Finnish company, we value transparency, quality, and
-              practical solutions. These principles guide every product we
-              build, every service we offer, and every decision we make.
+              But Ask4Help is just the beginning. We&apos;re passionate about
+              finding more ways to simplify the things people deal with every
+              day. If there&apos;s a better way to do something, we want to
+              build it.
             </p>
           </motion.div>
 

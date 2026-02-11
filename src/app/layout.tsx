@@ -12,11 +12,11 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://rosu.fi"),
   title: {
-    default: "RoSu Oy — Software Development from Finland",
+    default: "RoSu Oy — Software That Makes Everyday Life Easier",
     template: "%s | RoSu Oy",
   },
   description:
-    "RoSu Oy is a Finnish software development company engineering modern digital solutions. Platform development, technical consulting, and product design.",
+    "RoSu Oy is a Finnish software company building digital products that make everyday life easier and better.",
   keywords: [
     "RoSu Oy",
     "software development",
@@ -33,15 +33,15 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://rosu.fi",
     siteName: "RoSu Oy",
-    title: "RoSu Oy — Software Development from Finland",
+    title: "RoSu Oy — Software That Makes Everyday Life Easier",
     description:
-      "Finnish software development company building modern digital solutions and platforms.",
+      "Finnish software company building digital products that make everyday life easier and better.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "RoSu Oy — Software Development from Finland",
+    title: "RoSu Oy — Software That Makes Everyday Life Easier",
     description:
-      "Finnish software development company building modern digital solutions and platforms.",
+      "Finnish software company building digital products that make everyday life easier and better.",
   },
   robots: {
     index: true,

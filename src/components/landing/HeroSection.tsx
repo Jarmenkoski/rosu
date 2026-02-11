@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
 import Badge from "@/components/ui/Badge";
@@ -15,6 +16,20 @@ export default function HeroSection() {
       <div className="gradient-mesh-bg absolute inset-0" />
       <GradientBlob className="-left-64 -top-64" />
       <GradientBlob className="-bottom-32 -right-64 from-teal-500/30 via-teal-400/10" />
+
+      {/* Background logo */}
+      <div
+        aria-hidden
+        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-[0.04]"
+      >
+        <Image
+          src="/images/logo.png"
+          alt=""
+          width={700}
+          height={700}
+          className="h-[500px] w-[500px] object-contain md:h-[700px] md:w-[700px]"
+        />
+      </div>
 
       {/* Grid pattern */}
       <div
@@ -36,7 +51,7 @@ export default function HeroSection() {
         >
           <motion.div variants={fadeInUp}>
             <Badge variant="accent" className="mb-6">
-              Software Development Company
+              From Finland, for everyone
             </Badge>
           </motion.div>
 
@@ -59,23 +74,11 @@ export default function HeroSection() {
             className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row"
           >
             <Button href="/about" size="lg">
-              Learn More
+              Our Story
             </Button>
             <Button href="/contact" variant="secondary" size="lg">
               Get in Touch
             </Button>
-          </motion.div>
-
-          {/* Tech badges */}
-          <motion.div
-            variants={fadeInUp}
-            className="mt-16 flex flex-wrap items-center justify-center gap-3"
-          >
-            {["Next.js", "TypeScript", "PostgreSQL", "React"].map(
-              (tech) => (
-                <Badge key={tech}>{tech}</Badge>
-              )
-            )}
           </motion.div>
         </motion.div>
       </Container>

@@ -7,7 +7,7 @@ import TimelineSection from "@/components/about/TimelineSection";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Learn about RoSu Oy, a Finnish software development company building innovative digital products and platforms since 2024.",
+    "Learn about RoSu Oy — a Finnish software company on a mission to build products that make everyday life easier and better.",
 };
 
 export default function AboutPage() {
