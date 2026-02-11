@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --teal-400: #5BBCBF;
+  --gray-900: #0d0d1a;
+  --gray-950: #08080f;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-gray-950 text-white antialiased;
+  }
+
+  ::selection {
+    @apply bg-teal-400/30 text-white;
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-950;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-white/10;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-white/20;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply border border-white/[0.06] bg-white/[0.03] backdrop-blur-md;
+  }
+
+  .glass-hover {
+    @apply transition-all duration-300 hover:border-white/[0.1] hover:bg-white/[0.05];
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-teal-300 to-teal-500 bg-clip-text text-transparent;
+  }
+
+  .gradient-text-white {
+    @apply bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent;
+  }
+
+  .section-padding {
+    @apply px-4 py-20 sm:px-6 md:py-28 lg:px-8 lg:py-32;
+  }
+
+  .focus-ring {
+    @apply focus:outline-none focus:ring-2 focus:ring-teal-400/50 focus:ring-offset-2 focus:ring-offset-gray-950;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Gradient mesh background animation */
+.gradient-mesh-bg {
+  background: radial-gradient(at 40% 20%, hsla(181, 44%, 55%, 0.15) 0px, transparent 50%),
+    radial-gradient(at 80% 0%, hsla(210, 52%, 24%, 0.12) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, hsla(181, 44%, 55%, 0.08) 0px, transparent 50%),
+    radial-gradient(at 80% 50%, hsla(210, 52%, 24%, 0.08) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, hsla(181, 44%, 55%, 0.1) 0px, transparent 50%);
+  background-size: 200% 200%;
+  animation: gradient-shift 8s ease infinite;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
