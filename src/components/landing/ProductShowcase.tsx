@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Container from "@/components/ui/Container";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Card from "@/components/ui/Card";
@@ -29,7 +30,7 @@ export default function ProductShowcase() {
         />
 
         <div className="grid gap-8 lg:grid-cols-2">
-          {/* App mockup placeholder */}
+          {/* App screenshot */}
           <motion.div
             variants={fadeInUp}
             initial="hidden"
@@ -38,42 +39,15 @@ export default function ProductShowcase() {
             className="glass flex items-center justify-center rounded-2xl p-8"
           >
             <div className="relative w-full max-w-xs">
-              {/* Phone frame */}
-              <div className="aspect-[9/16] w-full rounded-3xl border border-white/10 bg-gray-900 p-3">
-                <div className="flex h-full flex-col rounded-2xl bg-gray-950">
-                  {/* Status bar */}
-                  <div className="flex items-center justify-between px-4 py-2">
-                    <span className="text-[10px] text-white/40">9:41</span>
-                    <div className="h-4 w-16 rounded-full bg-white/10" />
-                    <div className="flex gap-1">
-                      <div className="h-2 w-2 rounded-full bg-white/20" />
-                      <div className="h-2 w-2 rounded-full bg-white/20" />
-                    </div>
-                  </div>
-                  {/* App content */}
-                  <div className="flex-1 space-y-3 p-4">
-                    <div className="flex items-center gap-2">
-                      <div className="h-8 w-8 rounded-lg bg-teal-400/20" />
-                      <span className="text-sm font-semibold text-white/80">Ask4Help</span>
-                    </div>
-                    <div className="h-2 w-3/4 rounded bg-white/10" />
-                    <div className="h-2 w-1/2 rounded bg-white/10" />
-                    <div className="mt-4 space-y-2">
-                      {[1, 2, 3].map((i) => (
-                        <div key={i} className="rounded-lg border border-white/5 bg-white/[0.02] p-3">
-                          <div className="flex items-center gap-2">
-                            <div className="h-6 w-6 rounded-full bg-teal-400/20" />
-                            <div className="h-2 w-20 rounded bg-white/10" />
-                          </div>
-                          <div className="mt-2 h-2 w-full rounded bg-white/5" />
-                          <div className="mt-1 h-2 w-2/3 rounded bg-white/5" />
-                        </div>
-                      ))}
-                    </div>
-                    <div className="mt-auto">
-                      <div className="h-10 rounded-lg bg-teal-400/20" />
-                    </div>
-                  </div>
+              <div className="aspect-[9/16] w-full overflow-hidden rounded-3xl border border-white/10 bg-gray-900 p-3">
+                <div className="h-full w-full overflow-hidden rounded-2xl">
+                  <Image
+                    src="/images/ask4help.png"
+                    alt="Ask4Help app screenshot"
+                    width={320}
+                    height={569}
+                    className="h-full w-full object-cover object-top"
+                  />
                 </div>
               </div>
             </div>
