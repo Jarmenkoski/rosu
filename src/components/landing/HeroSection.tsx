@@ -25,9 +25,9 @@ export default function HeroSection() {
         <Image
           src="/images/logo.png"
           alt=""
-          width={700}
-          height={700}
-          className="h-[500px] w-[500px] object-contain md:h-[700px] md:w-[700px]"
+          width={1400}
+          height={1400}
+          className="h-[1000px] w-[1000px] object-contain md:h-[1400px] md:w-[1400px]"
         />
       </div>
 

@@ -9,7 +9,7 @@ export const COMPANY = {
   website: "https://rosu.fi",
 } as const;
 
-export const COMPANY_TAGLINE = "Software That Makes Everyday Life Easier" as const;
+export const COMPANY_TAGLINE = "Making Everyday Life Easier and Better" as const;
 
 export const COMPANY_DESCRIPTION =
   "RoSu Oy is a Finnish software company on a mission to build digital products that genuinely improve people's daily lives. We believe technology should simplify, not complicate — and every product we create starts from that conviction." as const;

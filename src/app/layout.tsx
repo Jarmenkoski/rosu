@@ -12,7 +12,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://rosu.fi"),
   title: {
-    default: "RoSu Oy — Software That Makes Everyday Life Easier",
+    default: "RoSu Oy — Making Everyday Life Easier and Better",
     template: "%s | RoSu Oy",
   },
   description:
@@ -33,13 +33,13 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://rosu.fi",
     siteName: "RoSu Oy",
-    title: "RoSu Oy — Software That Makes Everyday Life Easier",
+    title: "RoSu Oy — Making Everyday Life Easier and Better",
     description:
       "Finnish software company building digital products that make everyday life easier and better.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "RoSu Oy — Software That Makes Everyday Life Easier",
+    title: "RoSu Oy — Making Everyday Life Easier and Better",
     description:
       "Finnish software company building digital products that make everyday life easier and better.",
   },
