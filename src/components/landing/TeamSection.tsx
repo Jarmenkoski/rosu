@@ -1,11 +1,17 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Container from "@/components/ui/Container";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Card from "@/components/ui/Card";
 import { FOUNDERS } from "@/lib/constants";
 import { fadeInUp, staggerContainer } from "@/lib/animations";
+
+const founderImages: Record<string, string> = {
+  "Julius Rovio": "/images/julius.png",
+  "Jaakko Suomalainen": "/images/jaakko.png",
+};
 
 export default function TeamSection() {
   return (
@@ -27,11 +33,13 @@ export default function TeamSection() {
           {FOUNDERS.map((founder) => (
             <motion.div key={founder.name} variants={fadeInUp}>
               <Card className="h-full p-6 text-center">
-                <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-teal-400/10">
-                  <span className="text-2xl font-bold text-teal-400">
-                    {founder.name.charAt(0)}
-                  </span>
-                </div>
+                <Image
+                  src={founderImages[founder.name]}
+                  alt={founder.name}
+                  width={120}
+                  height={120}
+                  className="mx-auto mb-4 h-24 w-24 rounded-full object-cover"
+                />
                 <h3 className="text-lg font-semibold text-white">
                   {founder.name}
                 </h3>

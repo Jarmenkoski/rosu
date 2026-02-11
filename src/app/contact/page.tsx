@@ -1,13 +1,21 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Container from "@/components/ui/Container";
 import GradientBlob from "@/components/ui/GradientBlob";
+import Card from "@/components/ui/Card";
 import ContactForm from "@/components/contact/ContactForm";
 import ContactInfo from "@/components/contact/ContactInfo";
+import { FOUNDERS } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Contact",
   description:
     "Get in touch with RoSu Oy. Contact us about software development, consulting, partnerships, or general inquiries.",
+};
+
+const founderImages: Record<string, string> = {
+  "Julius Rovio": "/images/julius.png",
+  "Jaakko Suomalainen": "/images/jaakko.png",
 };
 
 export default function ContactPage() {
@@ -28,6 +36,27 @@ export default function ContactPage() {
             Have a question, feedback, or want to collaborate? We&apos;d love to
             hear from you.
           </p>
+        </div>
+
+        {/* Founders */}
+        <div className="mx-auto mt-12 grid max-w-2xl gap-6 sm:grid-cols-2">
+          {FOUNDERS.map((founder) => (
+            <Card key={founder.name} className="flex items-center gap-4 p-5">
+              <Image
+                src={founderImages[founder.name]}
+                alt={founder.name}
+                width={80}
+                height={80}
+                className="h-16 w-16 rounded-full object-cover"
+              />
+              <div>
+                <h3 className="text-lg font-semibold text-white">
+                  {founder.name}
+                </h3>
+                <p className="text-sm text-teal-400">{founder.role}</p>
+              </div>
+            </Card>
+          ))}
         </div>
 
         <div className="mx-auto mt-12 grid max-w-4xl gap-8 lg:grid-cols-5">
