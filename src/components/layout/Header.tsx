@@ -43,9 +43,9 @@ export default function Header() {
             <Image
               src="/images/logo.png"
               alt="RoSu Oy"
-              width={180}
-              height={60}
-              className="h-12 w-auto md:h-14"
+              width={240}
+              height={80}
+              className="h-20 w-auto md:h-24"
               priority
             />
           </Link>
