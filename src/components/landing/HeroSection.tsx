@@ -27,7 +27,7 @@ export default function HeroSection() {
           alt=""
           width={1800}
           height={1800}
-          className="h-[1200px] w-[1200px] object-contain md:h-[1800px] md:w-[1800px]"
+          className="block h-[1200px] w-[1200px] object-contain md:h-[1800px] md:w-[1800px]"
         />
       </div>
 

@@ -50,7 +50,7 @@ export default function ServicesSection() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
-          className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4"
+          className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mx-auto max-w-6xl"
         >
           {SERVICES.map((service) => (
             <motion.div key={service.title} variants={fadeInUp}>

@@ -26,7 +26,6 @@ export const NAV_LINKS = [
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ] as const;
-
 export const SERVICES = [
   {
     title: "Platform Development",
@@ -45,12 +44,6 @@ export const SERVICES = [
     description:
       "Great software starts with understanding people. We design intuitive interfaces through user research, prototyping, and iteration until it just feels right.",
     icon: "palette",
-  },
-  {
-    title: "Cloud & DevOps",
-    description:
-      "We set up the infrastructure so your product runs smoothly and scales when it needs to. Reliable deployments, monitoring, and peace of mind included.",
-    icon: "cloud",
   },
 ] as const;
 
@@ -71,7 +64,7 @@ export const FEATURES = [
   {
     title: "Job Posting",
     description:
-      "Homeowners describe their project, set a budget, and get matched with qualified contractors in minutes.",
+      "People describe their project, set a budget, date and get matched with qualified contractors in minutes.",
     icon: "clipboard",
   },
   {
@@ -109,21 +102,21 @@ export const FEATURES = [
 export const VALUE_PROPS = [
   {
     title: "Post a Job",
-    description: "Describe your project and let contractors come to you.",
+    description: "Describe your project and let contractors come to you. Previously there has been no easy way to find help for home projects — Ask4Help makes it simple and reliable.",
   },
   {
     title: "Compare Bids",
     description:
-      "Review competitive offers from verified professionals.",
+      "Review competitive offers from verified professionals. Transparent pricing and contractor profiles help you make informed decisions without the stress of negotiating or vetting on your own.",
   },
   {
     title: "Real-time Chat",
     description:
-      "Communicate directly with your contractor throughout the project.",
+      "Communicate directly with your contractor throughout the project. No more missed calls or lost emails — just seamless, instant messaging to keep everyone on the same page.",
   },
   {
     title: "Rate & Review",
-    description: "Share your experience and help build a trusted community.",
+    description: "Share your experience and help build a trusted community. Your feedback not only helps other homeowners but also rewards great contractors and encourages high-quality work.",
   },
 ] as const;
 
@@ -153,7 +146,7 @@ export const VALUES = [
   {
     title: "Simplicity",
     description:
-      "The best technology is the kind you don't have to think about. We obsess over removing friction so our products feel effortless to use.",
+      "The best technology is the kind you don't have to think about. We obsess over removing friction so that our products feel effortless to use.",
   },
   {
     title: "Real Impact",
@@ -168,30 +161,35 @@ export const VALUES = [
   {
     title: "Continuous Improvement",
     description:
-      "Good enough isn't good enough. We listen, learn, and iterate — because the best version of our product is always the next one.",
+      "Good enough isn't good enough. We listen, learn, and iterate — because the best version of the product is always the next one.",
   },
 ] as const;
 
 export const TIMELINE = [
   {
-    date: "Q1 2024",
+    date: "Q2 2024",
     title: "Company Founded",
     description: "RoSu Oy registered in Finland with a clear mission: build software that makes everyday life easier and better.",
   },
   {
-    date: "Q1 2026",
-    title: "First Funding Application",
-    description: "Submitted our first funding application to accelerate product development and bring our vision to a wider audience.",
+    date: "Q1 2025",
+    title: "Ask4Help Concept",
+    description: "Ask4Help idea was staged and planned."
   },
   {
     date: "Q2 2025",
     title: "Ask4Help Concept Demo",
-    description: "Designed and built the first interactive prototype of Ask4Help in Figma, validating the core user experience.",
+    description: "Designed and built the first interactive prototype of Ask4Help.",
   },
   {
     date: "Q4 2025",
     title: "Demo Platform Built",
     description: "Developed a working demo of the Ask4Help platform, bringing the concept to life with real functionality.",
+  },
+  {
+    date: "Q1 2026",
+    title: "First Funding Application",
+    description: "Submitted our first funding application to accelerate product development and bring our vision to a wider audience.",
   },
   {
     date: "Q2 2026",
