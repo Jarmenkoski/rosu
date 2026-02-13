@@ -17,17 +17,17 @@ export default function HeroSection() {
       <GradientBlob className="-left-64 -top-64" />
       <GradientBlob className="-bottom-32 -right-64 from-teal-500/30 via-teal-400/10" />
 
-      {/* Background logo */}
+      {/* Background logo: centered horizontally, shifted 10% down, larger */}
       <div
         aria-hidden
-        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-[0.04]"
+        className="absolute inset-x-0 top-[60%] -translate-y-1/2 flex justify-center opacity-[0.04] pointer-events-none"
       >
         <Image
           src="/images/logo.png"
           alt=""
-          width={1400}
-          height={1400}
-          className="h-[1000px] w-[1000px] object-contain md:h-[1400px] md:w-[1400px]"
+          width={1800}
+          height={1800}
+          className="h-[1200px] w-[1200px] object-contain md:h-[1800px] md:w-[1800px]"
         />
       </div>
 
