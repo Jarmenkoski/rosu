@@ -34,12 +34,6 @@ export const SERVICES = [
     icon: "code",
   },
   {
-    title: "Technical Consulting",
-    description:
-      "Not sure where to start? We help you choose the right technology, plan your architecture, and make smart decisions that save time and money down the road.",
-    icon: "lightbulb",
-  },
-  {
     title: "Product Design",
     description:
       "Great software starts with understanding people. We design intuitive interfaces through user research, prototyping, and iteration until it just feels right.",
